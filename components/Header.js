@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import {View, ScrollView, Text } from 'react-native'
 import { Thumbnail, H3 } from 'native-base'
-import ToggleSwitch from 'toggle-switch-react-native'
 
+import ToggleSwitch from './ToggleSwitch'
 export default class Header extends Component {
 
   render () {
@@ -14,8 +14,7 @@ export default class Header extends Component {
             <Text style={{color:"#FFFFFF", fontSize: 12}}>Hello</Text>
             <Text style={{color:"#FFFFFF", fontSize: 12}}>DiptarkBose321!</Text>
           </View>
-          
-
+          <ToggleSwitch/>
         </View>
       </View>
     )

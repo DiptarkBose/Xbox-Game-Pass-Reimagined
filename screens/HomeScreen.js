@@ -3,7 +3,6 @@ import { ActivityIndicator, View, ScrollView } from 'react-native'
 import { Container, CardItem, Card, Content, Left, Body, Text, Image, Button, Icon, Right, List, ListItem, Footer, FooterTab } from 'native-base'
 import * as Font from 'expo-font'
 import { Actions } from "react-native-router-flux";
-import ToggleSwitch from 'toggle-switch-react-native'
 
 import Header from '../components/Header'
 export default class HomeScreen extends Component {
@@ -27,15 +26,6 @@ export default class HomeScreen extends Component {
     return (
       <View style={{flex: 1}}>
         <Header/>
-        <ToggleSwitch
-          isOn={false}
-          onColor='green'
-          offColor='red'
-          label='Example label'
-          labelStyle={{color: 'black', fontWeight: '900'}}
-          size='large'
-          onToggle={ (isOn) => console.log('changed to : ', isOn) }
-      />
       </View>
     )
   }
